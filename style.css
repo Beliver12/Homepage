@@ -1,7 +1,7 @@
 .container{
-    height: 170vh;
+    height: 180vh;
     display: grid;
-    grid-template-rows: 40vh 15vh 70vh 45vh;
+    grid-template-rows: 40vh 15vh 70vh 55vh;
 }
 
 * {
@@ -48,7 +48,7 @@ img {
 
 .card-footer > div {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(5%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(2%, 1fr));
     grid-template-rows: none;
 }
 
@@ -98,7 +98,7 @@ i{
     .container{
         height: 370vh;
         display: grid;
-        grid-template-rows: 110vh 5vh 180vh 75vh;
+        grid-template-rows: 110vh 5vh 200vh 55vh;
     }
     .header {
         display: grid;
@@ -111,5 +111,8 @@ i{
     .img-description{
         
         grid-row: 2/3;
+    }
+    *{
+        font-size: small;
     }
 }
