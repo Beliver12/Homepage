@@ -1,7 +1,7 @@
 .container{
     height: 180vh;
     display: grid;
-    grid-template-rows: 40vh 15vh 70vh 55vh;
+    grid-template-rows: 50vh 5vh 70vh 55vh;
 }
 
 * {
@@ -15,10 +15,16 @@ div{
 img {
     display: block; 
     max-width: 100%;
+    
   }
 
 .img-description {
     display: grid;
+    background-color: white;
+    color: black;
+    max-width: 100%;
+    height: 35vh;
+    align-self: center;
 }
 
 .header-icons{
@@ -33,6 +39,17 @@ img {
     display: grid;
     grid-template-columns: 40vw 40vw;
     justify-content: center;
+    background-color: rgb(32, 104, 153);
+    color: white;
+    border: none;
+}
+.cards > div > picture {
+    text-align: center;
+    background-color: rgb(211, 8, 8);
+}
+.cards > div {
+    display: grid;
+    grid-template-rows: 1fr 100px;
 }
 
 .cards{
@@ -74,10 +91,43 @@ i{
     justify-self: center;
     align-self: center;
 }
-
+.footer{
+    background-color: rgb(32, 104, 153);
+    color: white;
+    border: none;
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+}
+.footer > picture {
+    grid-column: 2/3;
+}
+.footer > div {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
 @media only screen and (max-width: 768px) {
     div{
         width: 100%;
+    }
+    h3{
+        font-size: small;
+    }
+    .card-footer > div {
+        display: grid;
+        grid-template-columns: 1fr 60px;
+        grid-template-rows: none;
+    }
+    .card-footer > p {
+      font-size: smaller;
+    }
+    .cards > div > picture > h1 {
+        font-size: medium;
+    }
+}
+@media only screen and (max-width: 528px) {
+    h3{
+        font-size: x-small;
+        justify-self: center;
     }
 }
 
