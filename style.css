@@ -53,9 +53,29 @@ img {
     color: white;
     border: none;
 }
-.cards > div > picture {
+.cards > .card1 > picture {
     text-align: center;
     background-color: rgb(211, 8, 8);
+}
+.cards > .card2 > picture {
+    text-align: center;
+    background-color: rgb(0, 89, 255);
+}
+.cards > .card3 > picture {
+    text-align: center;
+    background-color: rgb(10, 184, 10)
+}
+.cards > .card4 > picture {
+    text-align: center;
+    background-color: yellow
+}
+.cards > .card5 > picture {
+    text-align: center;
+    background-color: purple
+}
+.cards > .card6 > picture {
+    text-align: center;
+    background-color: pink
 }
 .cards > div {
     display: grid;
